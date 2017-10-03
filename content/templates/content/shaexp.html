@@ -1,0 +1,10 @@
+{% extends "sc/root.html" %}
+{% block body %}
+    <h2>for loop list link career</h2>
+    {% for ShExpJob in object_list %}
+    <h5><a href="/content/{{ShExpJob.id}}"> {{ ShExpJob.career }}</a></h5>
+    {% endfor %}
+    <h1 style="color:brown">PicCareer</h1>
+    <h2>carousel 1 -> overall ,for loop listMan -> if listMan.carrer == listJob.career</h2>
+    <h2>block Man</h2>
+{% endblock %}

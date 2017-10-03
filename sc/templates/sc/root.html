@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>SharingCitizen</title>
+	<meta charset="utf-8" />
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type = "text/css"/>
+</head>
+
+<body class="body" style="background-color:#f6f6f6">
+    <nav>
+        <h1>Nav</h1>
+    </nav>
+    <div>
+	    {% block body %}
+	    {% endblock %}	
+    </div>
+    <footer>
+        <h1>Footer</h1>
+    </footer>
+</body>
+
+</html>
